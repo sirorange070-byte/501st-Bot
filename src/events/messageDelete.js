@@ -52,8 +52,9 @@ export default {
         formatLogLine('Message created', `<t:${Math.floor(message.createdTimestamp / 1000)}:R>`),
       ];
 
-      let messageBody = null;
+            let messageBody = null;
       if (message.content) {
+        logger.info(`Deleted message raw content: "${message.content}"`); // لطباعة النص الأصلي في الكونسول
         messageBody = message.content.length > MAX_LOGGED_MESSAGE_CONTENT_LENGTH
           ? `${message.content.substring(0, MAX_LOGGED_MESSAGE_CONTENT_LENGTH - 3)}...`
           : message.content;
@@ -61,6 +62,10 @@ export default {
 
       if (message.attachments.size > 0) {
         metaLines.push(formatLogLine('Attachments', String(message.attachments.size)));
+      }
+
+      if (message.stickers?.size > 0) {
+        metaLines.push(formatLogLine('Stickers', message.stickers.map(s => s.name).join(', ')));
       }
 
       await logEvent({
