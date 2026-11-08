@@ -9,7 +9,7 @@ export const botConfig = {
   // - "idle"      = yellow moon
   // - "dnd"       = red do-not-disturb
   // - "invisible" = appears offline
-  presence: {smth tuff
+  presence: {
     // Current online state shown on Discord.
     status: "idle",
 
@@ -21,8 +21,8 @@ export const botConfig = {
     // 3 = Watching
     // 4 = Custom
     // 5 = Competing
-    activities: [0
-      {smth tuff1
+    activities: [
+      {
         name: "Bot Games", // required by Discord API, not shown in the client
         state: "/Work",     // this is what people actually see
         type: 0,               // Custom
