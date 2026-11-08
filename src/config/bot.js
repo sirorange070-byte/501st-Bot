@@ -23,8 +23,8 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: ""I am Still Loyal Sir."", // required by Discord API, not shown in the client
-        state: ""I am Still Loyal Sir."",     // this is what people actually see
+        name: "I am Still Loyal Sir.", // required by Discord API, not shown in the client
+        state: "I am Still Loyal Sir.",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
