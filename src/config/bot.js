@@ -21,8 +21,8 @@ export const botConfig = {
     // 3 = Watching
     // 4 = Custom
     // 5 = Competing
-    activities: [
-      {
+    activities: [0
+      {smth tuff1
         name: "Chilling", // required by Discord API, not shown in the client
         state: "Chilling",     // this is what people actually see
         type: 0,               // Custom
