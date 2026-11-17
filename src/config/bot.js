@@ -23,8 +23,8 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: "Last Deployment Day", // required by Discord API, not shown in the client
-        state: "Last Deployment Day",     // this is what people actually see
+        name: "Last Deployment Day.", // required by Discord API, not shown in the client
+        state: "Last Deployment Day.",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
